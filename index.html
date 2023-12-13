@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./componets/style.css">
   <title>Lind Old Boys</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -13,22 +15,56 @@
 </head>
 
 <body>
-
   <main>
-    <h1>Velkommen til det nye Lind Old Boys</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="pictures/LOB Logo 2 Edited 2.png" alt="Bootstrap" width="217" height="100%">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="index.html" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Nyheder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Arrangementer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activities.html">Aktiviteter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Om LOB</a>
+              </li>
+              <li>
+                <button class="btn btn-outline-success" type="button">Bliv Medlem</button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    </header>
   </main>
-test
+
   <footer>
-    <!-- Copyright -->
-    <div class="copyright">
-      © 2023 Copyright:
-      <a class="text-white" href="">Lind Oldboys</a>
-    </div>
-    <!-- Copyright -->
+
   </footer>
 
+  <script src="index.js"></script>
 </body>
 
-<script src="index.js"></script>
+
 
 </html>
