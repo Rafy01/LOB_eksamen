@@ -1,0 +1,36 @@
+body {
+    background-color: #252525;
+}
+
+.header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
+
+/* Header Blur */
+backdrop-filter: blur(2px);
+}
+
+
+.nav-item{
+    padding-right: 30px;
+}
+
+.nav-link{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    
+    
+}
+
+main{
+    position: relative;
+}
+
+.herotext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 0px 15px black;
+}
