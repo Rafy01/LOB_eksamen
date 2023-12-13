@@ -3,10 +3,9 @@ body {
 }
 
 .header{
+    position:absolute;z-index:1;width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%);
-
-/* Header Blur */
-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 
@@ -22,15 +21,37 @@ backdrop-filter: blur(2px);
     
 }
 
-main{
-    position: relative;
+.hero-section{
 }
 
-.herotext{
+.hero-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-shadow: 0px 0px 15px black;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+.footer{
+
+}
+
+.spons{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.sponsorer{
+    width:  13.85%;
+    height: 67px;
 }
