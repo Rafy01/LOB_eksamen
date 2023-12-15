@@ -176,26 +176,6 @@ h3 {
     /* Text color */
 }
 
-/* Media query for desktop */
-@media (min-width: 768px) {
-    .button-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .small-button-text {
-        margin-top: 10px;
-        /* Adjust margin as needed */
-    }
-}
-
-/* Media query for mobile */
-@media (max-width: 767px) {
-    .button-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 .rounded-input {
     width: 100%;
     border-radius: 18px;
@@ -204,15 +184,6 @@ h3 {
     border: 1px;
     outline: none;
     box-sizing: border-box;
-}
-
-
-
-@media (max-width 768px) {
-    .rounded-input {
-        width: calc(100%-24px);
-        margin: 6px;
-    }
 }
 
 .checkbox {
@@ -253,7 +224,7 @@ h3 {
     padding: 10px 20px;
     background-color: #B18A29;
     border: none;
-    color: ;
+    color: black;
     cursor: pointer;
     text-align: center;
 }
@@ -278,13 +249,6 @@ h3 {
     font-size: 21px;
     margin-top: 12px;
     text-align: center;
-}
-
-@media (max-width 767px) {
-    .Aktiviteter {
-        width: calc(100%-24px);
-        margin: 6px;
-    }
 }
 
 .Medlemskabspris {
