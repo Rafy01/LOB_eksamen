@@ -1,29 +1,139 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./componets/style.css">
-    <title>Lind Old Boys</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <!-- Metadata til søgemaskiners robotter, indstiller indhold til "noindex" -->
-    <meta name="robots" content="noindex">
-  </head>
-  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./components/style.css">
+  <title>Lind Old Boys</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <!-- Metadata til søgemaskiners robotter, indstiller indhold til "noindex" -->
+  <meta name="robots" content="noindex">
+</head>
+
+<body class="background">
+
+  <header>
+    <nav class="navbar navbar-expand-lg header sticky-top">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="pictures/lob-logo-wide.png" alt="Bootstrap" width="217" height="100%">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">Nyheder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Arrangementer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activities.html">Aktiviteter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">OmLOB</a>
+            </li>
+            <li>
+              <a href="member.html"><button type="button" class="btn btn-dark">BlivMedlem</button></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
   <body>
-    <main>
-        <h1>Velkommen til det nye Lind Old Boys</h1>  
-    </main>
-	<script src="index.js"></script>
+    <form>
+      <h1 class="BlivMedlem">Bliv Medlem</h1>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="rounded-input">
+              <label for="exampleInputname1"></label>
+              <input type="text" class="rounded-input" id="exampleInputname1" placeholder="Fornavn">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="rounded-input">
+              <label for="exampleInputnickname"></label>
+              <input type="text" class="rounded-input" id="exampleInputnickname" placeholder="Efternavn">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="rounded-input">
+              <label for="exampleInputEmail"></label>
+              <input type="text" class="rounded-input" id="exampleInputEmail" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="rounded-input">
+              <label for="exampleInputnumber"></label>
+              <input type="text" class="rounded-input" id="exampleInputnumber" placeholder="Telefonnr.">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="rounded-input">
+              <label for="exampleInputPostcode"></label>
+              <input type="text" class="rounded-input" id="exampleInputPostcode" placeholder="Postnr">
+            </div>
+          </div>
+          <p class="Medlemskabspris col-sm12 col-md-6 align">Medlemskabspris: 700.-DKK/år.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h5 class="Aktiviteter">Aktiviteter</h5>
+        <br>
+        <div class="checkboxsport">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Fodbold</label>
+        </div>
+        <div class="checkboxsport">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Volleyball</label>
+        </div>
+        <div class="checkboxsport">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Badminton</label>
+        </div>
+        <div class="checkboxsport">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Fitness (100.-DKK)</label>
+        </div>
+        <div class="checkboxsport">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Løb</label>
+        </div>
+        <br>
+        <br>
+        <div class="checkbox">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Jeg er 28+ år og accepter <span
+              class="vedtægter">vedtægter</span></label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Jeg giver hermed lov til at LOB behandler mine
+            personoplysninger jf. vores <span class="privatlivspolitik">privatlivspolitik</span></label>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center">
+                  <div class="ButtonBlivMedlem col-sm-12 col-md-6">
+          <button type="submit" class="rounded-button">Opret Medlemskab</button>
+        </div>
+        </div>
+    </form>
   </body>
-<footer>
-  
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="">Lind Oldboys</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+
 </html>
