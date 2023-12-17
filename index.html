@@ -15,35 +15,35 @@
 </head>
 
 <body class="background">
-  
+
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg header">
-      <div class="container-fluid">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="pictures/lob-logo-wide.png" alt="Bootstrap" width="217" height="100%">
-          </a>
-        </div>
+    <nav class="navbar navbar-expand-lg header navbar-dark">
+      <div class="container-fluid sides">
+        <a class="navbar-brand icon-link" href="index.html">
+          <img src="pictures/lob-logo-wide.webp" class="logo-hover" alt="LOB Logo" width="auto" height="65px"
+          data-default-src="pictures/lob-logo-wide.webp" data-hover-src="pictures/lob-logo-wide-secondary.webp">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">Nyheder</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a class="custom-link" href="news.html">Nyheder</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Arrangementer</a>
+            <li class="nav-item d-flex align-items-center">
+              <a class="custom-link" href="events.html">Arrangementer</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="activities.html">Aktiviteter</a>
+            <li class="nav-item d-flex align-items-center">
+              <a class="custom-link" href="activities.html">Aktiviteter</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">OmLOB</a>
+            <li class="nav-item d-flex align-items-center">
+              <a class="custom-link" href="about.html">Om LOB</a>
             </li>
-            <li>
-              <a href="member.html"><button type="button" class="btn btn-dark">BlivMedlem</button></a>
+            <li class="d-flex align-items-center">
+              <a href="member.html"><button type="button" class="btn btn-dark signup-button">Bliv
+                  Medlem</button></a>
             </li>
           </ul>
         </div>
@@ -54,21 +54,71 @@
   <main>
 
     <div class="hero-section">
-      <!-- Hero-sektion med en velkomstbesked -->
       <div class="hero-text text-center">
-        <h1>
+        <h1 class="hero-heading">
           Lind Old Boys
         </h1>
-        <h2>
-          -Mere end bare en fodboldklub
+        <h2 class="hero-subheading">
+          - Mere end bare en fodboldklub
         </h2>
+        <a href="member.html"><button type="button" class="btn btn-dark signup-button">Bliv Medlem</button></a>
       </div>
-      <img class="hero-img" src="pictures/new_pics/lob-bar.jpeg" alt="hero image">
+
+      <div class="container-fluid sides icons ">
+        <div class="row row-cols-sm-2 row-cols-3">
+          <div class="d-none d-sm-block col-sm-3">
+          </div>
+          <div class="col-xs-4 col-sm-2 icon d-flex justify-content-center">
+            <a href="activities.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/soccer.webp" class="icon-image" alt="Fodbold"
+                data-default-src="pictures/icons/soccer.webp" data-hover-src="pictures/icons/soccer-gold.webp">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+            <a href="activities.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/fitness.webp" class="icon-image" alt="Fitness"
+                data-default-src="pictures/icons/fitness.webp" data-hover-src="pictures/icons/fitness-gold.webp">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+            <a href="activities.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/volley.webp" class="icon-image" alt="Volley"
+                data-default-src="pictures/icons/volley.webp" data-hover-src="pictures/icons/volley-gold.webp">
+            </a>
+          </div>
+          <div class="d-none d-sm-block col-sm-3">
+          </div>
+          <div class="d-none d-sm-block col-sm-3">
+          </div>
+          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+            <a href="activities.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/running.webp" class="icon-image" alt="Running"
+                data-default-src="pictures/icons/running.webp" data-hover-src="pictures/icons/running-gold.webp">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+            <a href="about.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/beer.webp" class="icon-image" alt="Hygge"
+                data-default-src="pictures/icons/beer.webp" data-hover-src="pictures/icons/beer-gold.webp">
+            </a>
+          </div>
+          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+            <a href="activities.html" target="_blank" class="icon-link">
+              <img src="pictures/icons/badminton.webp" class="icon-image" alt="badminton"
+                data-default-src="pictures/icons/badminton.webp" data-hover-src="pictures/icons/badminton-gold.webp">
+            </a>
+          </div>
+          <div class="d-none d-sm-block col-sm-3">
+          </div>
+        </div>
+      </div>
+
+      <img class="hero-img" src="pictures/new_pics/lob-bar.jpeg" alt="Bar">
     </div>
 
     <div class="container-fluid sides">
       <div class="row row-cols-2">
-        <div class="col-xs-0 col-sm-2">
+        <div class="d-none d-sm-block col-sm-2">
         </div>
         <div class="col-xs-12 col-sm-4 block">
           <img src="pictures/badminton-unsplash.jpg" class="img-fluid" alt="Image 1">
@@ -76,11 +126,11 @@
         <div class="col-xs-12 col-sm-4 block">
           <img src="pictures/bowling-unsplash.jpg" class="img-fluid" alt="Image 1">
         </div>
-        <div class="col-xs-0 col-sm-2">
+        <div class="d-none d-sm-block col-sm-2">
         </div>
       </div>
       <div class="row row-cols-2">
-        <div class="col-xs-0 col-sm-2">
+        <div class="d-none d-sm-block col-sm-2">
         </div>
         <div class="col-xs-12 col-sm-4 block">
           <img src="pictures/badminton-unsplash.jpg" class="img-fluid" alt="Image 1">
@@ -88,7 +138,7 @@
         <div class="col-xs-12 col-sm-4 block">
           <img src="pictures/bowling-unsplash.jpg" class="img-fluid" alt="Image 1">
         </div>
-        <div class="col-xs-0 col-sm-2">
+        <div class="d-none d-sm-block col-sm-2">
         </div>
       </div>
     </div>
@@ -101,35 +151,45 @@
       <div class="container-fluid sides">
         <div class="row row-cols-2 spons-row">
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="Image 1">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="ABC Skilte">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/miniradio-logo.webp" class="img-fluid" alt="Image 2">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/miniradio-logo.webp" class="img-fluid" alt="Miniradio">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/jysk_logo.webp" class="img-fluid" alt="Image 3">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/jysk_logo.webp" class="img-fluid" alt="Jysk">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/averhoff.webp" class="img-fluid" alt="Image 4">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/averhoff.webp" class="img-fluid" alt="Averhoff">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/hubsch-logo.webp" class="img-fluid" alt="Image 5">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/hubsch-logo.webp" class="img-fluid" alt="Hubsch">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/lightpartner-logo.webp" class="img-fluid" alt="Image 6">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/lightpartner-logo.webp" class="img-fluid" alt="Light Partner">
+            </a>
           </div>
           <div class="col-xs col-sm spons-img">
-            <img src="pictures/spons/rema-logo.webp" class="img-fluid" alt="Image 7">
+            <a href="#!" target="_blank">
+              <img src="pictures/spons/rema-logo.webp" class="img-fluid" alt="Rema 1000">
+            </a>
           </div>
         </div>
       </div>
 
-
-      <!-- Grid container -->
       <div class="container-fluid sides pb-0">
-        <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
           <div class="col-1">
           </div>
           <div class="col-sm-7 col-md-8 col-xxl-9">
@@ -146,54 +206,55 @@
                 <a href="#!" class="text-white text-decoration-none">ath@jysk.com</a>
               </li>
               <li>
-                <a href="#!" class="gold">Privatlivspolitik</a>
+                <a href="privacy_policy.html" class="gold">Privatlivspolitik</a>
               </li>
               <li>
-                <a href="#!" class="gold">Vedtægter</a>
+                <a href="regulations.html" class="gold">Vedtægter</a>
               <li>
-                <a href="#!" class="gold">Bliv Medlem</a>
+                <a href="member.html" class="gold">Bliv Medlem</a>
               </li>
             </ul>
           </div>
-          <!--Grid column-->
 
-          <!--Grid column-->
           <div class="col-sm-3 col-md-2 col-xxl-1">
             <h5 class="text-uppercase pb-2 text-white">Links</h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!" class="gold">Lind Old Girls</a>
+                <a href="#!" target="_blank" class="gold">Lind Old Girls</a>
               </li>
               <li>
-                <a href="#!" class="gold">Lind Borgerforening</a>
+                <a href="#!" target="_blank" class="gold">Lind Borgerforening</a>
               </li>
               <li>
-                <a href="#!" class="gold">Alpi Hallerne</a>
+                <a href="#!" target="_blank" class="gold">Alpi Hallerne</a>
               </li>
               <li>
-                <a href="#!" class="gold">De Små Klinger</a>
+                <a href="#!" target="_blank" class="gold">De Små Klinger</a>
               </li>
               <li>
-                <a href="#!" class="gold">KLG</a>
+                <a href="#!" target="_blank" class="gold">KLG</a>
               </li>
             </ul>
           </div>
           <div class="col-1">
           </div>
-          <!--Grid column-->
         </div>
       </div>
-      <!-- Copyright -->
+
       <div class="text-center text-white pb-2">
         © 2023 Copyright:
         <a class="text-white" href="#">lindoldboys.dk</a>
       </div>
-      <!-- Copyright -->
+
     </footer>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous""></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="components/script.js"></script>
+
 </body>
 
 </html>
