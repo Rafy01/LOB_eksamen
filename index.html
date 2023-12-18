@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Sætter dokumentets sprog til dansk -->
 
-<head>
+<head> <!-- Indeholder vores usynlige elementer -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Starten til en responsive website, scaler dokumentet med enhedens skærmbredde -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./components/style.css">
-  <title>Lind Old Boys > Forside</title>
-  <link rel="icon" href="./pictures/lob-logo-tall.png" type="image/x-icon">
-  <!-- Metadata til søgemaskiners robotter, indstiller indhold til "noindex" -->
-  <meta name="robots" content="noindex">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Linker til Bootstrap 5 stylesheet (CSS), så vi kan bruge classes herfra. Dette gør vi for at opsætte vores site i 12 columns, som matcher vores figma mockup designvalg, og skal gøre hele processen hurtigere og nemmere -->
+  <link rel="stylesheet" href="./components/style.css"> <!-- Linker til vores stylesheet, som er external da det er en fil for sig selv -->
+  <title>Lind Old Boys > Forside</title> <!-- Indstiller titlen på linket, som er teksten man kan læse i fanen -->
+  <link rel="icon" href="./pictures/lob-logo-tall.png" type="image/x-icon"> <!-- Indstiller favicon, som er billedet man kan se i fanen -->
+  <meta name="robots" content="noindex"> <!-- Metadata til søgemaskiners robotter, indstiller indhold til "noindex" --> 
 </head>
 
-<body class="background">
+<body class="background"> <!-- Indeholder vores synlige elementer -->
 
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg header navbar-dark">
-      <div class="container-fluid sides">
-        <a class="navbar-brand icon-link" href="index.html">
+  <header class="sticky-top"> <!-- Header er HTML5 element, som angiver at dette hører til øverst på sitet, og typisk vil indeholde logo og navigation, hvis man følger designkonventioner --> <!-- Class låser alt i vores header element fast til at følge toppen af skærmen selvom man scroller -->
+    <nav class="navbar navbar-expand-lg header navbar-dark"> <!-- Nav er HTML5 element, som angiver at vi her har vores navigation (links osv.) -->
+      <div class="container-fluid sides"> <!-- Bootstrap 5 CSS, som gør vores div til en container så vi kan anvende Bootstrap 5 CSS til elementerne i den, f.eks. rows, columns mm. --> <!-- Class "sides" (vores) får hele containeren til at have sidemargener -->
+        <a class="navbar-brand icon-link" href="index.html"> <!-- Gør vores logo til et klikbart link -->
           <img src="pictures/lob-logo-wide.webp" class="logo-hover" alt="LOB Logo" width="auto" height="65px"
-            data-default-src="pictures/lob-logo-wide.webp" data-hover-src="pictures/lob-logo-wide-secondary.webp">
+            data-default-src="pictures/lob-logo-wide.webp" data-hover-src="pictures/lob-logo-wide-secondary.webp"> <!-- Vores logo er i vores nav, da vi bruger det som et link til forsiden. Indeholder js som laver giver en hover effect -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Bootstrap 5 CSS som giver os en interaktiv burgermenu knap, som gør brug af Bootstrap 5 javascript, som er loaded nederst i body i dokumentet -->
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item d-flex align-items-center">
-              <a class="custom-link" href="news.html">Nyheder</a>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Mere burgermenu CSS -->
+          <ul class="navbar-nav ms-auto"> <!-- Her er opstillet vores navigationslinks, som er skubbet til højre i headeren ved brug af Bootstrap 5 margin class. De er opstillet i en liste -->
+            <li class="nav-item d-flex align-items-center"> <!-- Lidt CSS som holder indholdet centreret -->
+              <a class="custom-link" href="news.html">Nyheder</a> <!-- Navigationslinks med egen CSS for at tilpasse farve, størrelse osv. -->
             </li>
             <li class="nav-item d-flex align-items-center">
               <a class="custom-link" href="events.html">Arrangementer</a>
@@ -43,7 +42,7 @@
             </li>
             <li class="d-flex align-items-center">
               <a href="member.html"><button type="button" class="btn btn-dark continue-button">Bliv
-                  Medlem</button></a>
+                  Medlem</button></a> <!-- Knap til tilmeldingessiden, en call-to-action -->
             </li>
           </ul>
         </div>
@@ -51,27 +50,27 @@
     </nav>
   </header>
 
-  <main>
+  <main> <!-- Main er et HTML5 element som angiver, at dette er dokumentets/sidens primære indhold -->
 
-    <div class="hero-section">
-      <div class="hero-text text-center">
-        <h1 class="hero-heading">
+    <div class="hero-section"> <!-- Opretter et element til vores hero område -->
+      <div class="hero-text text-center"> <!-- Bootstrap 5 CSS class som centrerer vores text -->
+        <h1 class="hero-heading"> <!-- Har guld effekt, i modsætning til teksten under -->
           Lind Old Boys
         </h1>
         <h2 class="hero-subheading">
           - Mere end bare en fodboldklub
         </h2>
         <a href="member.html"><button type="button" class="btn btn-dark continue-button">Bliv Medlem</button></a>
-      </div>
+      </div> <!-- En bliv meldem knap -->
 
-      <div class="container-fluid sides icons ">
-        <div class="row row-cols-3 justify-content-center">
-          <div class="d-none d-sm-block col-sm-3">
+      <div class="container-fluid sides icons"> <!-- Et element som holder vores icons samlet -->
+        <div class="row row-cols-3 justify-content-center"> <!-- Rows lader os opstille vores icons -->
+          <div class="d-none d-sm-block col-sm-3"> <!-- Kolonner som angiver vores bredde på elementerne, i dette tilfælde blot som fylde -->
           </div>
-          <div class="col-xs-4 col-sm-2 icon d-flex justify-content-center">
+          <div class="col-xs-4 col-sm-2 icon d-flex justify-content-center"> <!-- Angiver størrelser for kasserne vores ikoner er i -->
             <a href="activities.html" target="_blank" class="icon-link">
-              <img src="pictures/icons/soccer.webp" class="icon-image" alt="Fodbold"
-                data-default-src="pictures/icons/soccer.webp" data-hover-src="pictures/icons/soccer-gold.webp">
+              <img src="pictures/icons/soccer.webp" class="icon-image" alt="Fodbold" 
+                data-default-src="pictures/icons/soccer.webp" data-hover-src="pictures/icons/soccer-gold.webp"> <!-- Vores ikoner som billeder. Her er også js kode til en hover effekt -->
             </a>
           </div>
           <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
@@ -113,24 +112,24 @@
         </div>
       </div>
 
-      <img class="hero-img" src="pictures/new_pics/lob-bar.jpeg" alt="Bar">
+      <img class="hero-img" src="pictures/new_pics/lob-bar.jpeg" alt="Bar"> <!-- Et hero billede som med CSS kun er i baggrunden og fylder hele skærmhøjden -->
     </div>
 
-    <div class="text-center section-title">
+    <div class="text-center section-title"> <!-- En sektionstitel som vises midt på siden -->
       <h1>
         Nyheder
       </h1>
     </div>
 
-    <div class="container-fluid sides">
-      <div class="row justify-content-center">
-        <div class="col-sm-4">
-          <a class="cards" onclick="location.href='generalforsamling_23.html';">
-            <div class="button-small-text">
+    <div class="container-fluid sides"> <!-- En container til vores cards, som er fundamentet for indholdet vores site -->
+      <div class="row justify-content-center"> <!-- Opstiller vores cards i midten -->
+        <div class="col-sm-4"> <!-- Angiver bredde størrelsen på vores card -->
+          <a class="cards" onclick="location.href='generalforsamling_23.html';"> <!-- Link til card'ets indholdsside -->
+            <div class="button-small-text"> <!-- Tekst ovenpå card -->
               <h2>Generalforsamling 23</h2>
               <h3>22. april 2023</h3>
             </div>
-            <img src="./pictures/generalforsamling.jpg" alt="Button Image 1">
+            <img src="./pictures/generalforsamling.jpg" alt="Button Image 1"> <!-- Billedet på card, som er cropped via CSS -->
           </a>
         </div>
         <div class="col-sm-4">
@@ -142,7 +141,7 @@
             <img src="./pictures/padel-unsplash.jpg" alt="Button Image 1">
           </a>
         </div>
-        <hr class="col-xs-12 col-sm-8 spacer">
+        <hr class="col-xs-12 col-sm-8 spacer"> <!-- En spacer/line, til at adskille vores sektioner tydeligt -->
       </div>
     </div>
 
@@ -186,7 +185,7 @@
     <div class="container-fluid sides">
       <div class="row justify-content-center">
         <div class="col-sm-4">
-          <a class="cards" onclick="location.href='#!';">
+          <a class="cards" onclick="location.href='#!';"> <!-- Her skal linkes til DBU's kampprogram for det specifikke hold -->
             <div class="button-small-text">
               <h2>Old Boys +32</h2>
               <h3>1. runde: 24/2/24 kl. 18:30</h3>
@@ -195,7 +194,7 @@
           </a>
         </div>
         <div class="col-sm-4">
-          <a class="cards" onclick="location.href='#!';">
+          <a class="cards" onclick="location.href='#!';"> <!-- Her skal linkes til DBU's kampprogram for det specifikke hold -->
             <div class="button-small-text">
               <h2>Old Boys +40</h2>
               <h3>1. runde: 25/2/24 kl. 18:30</h3>
@@ -208,13 +207,13 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer"> <!-- Footer er et HTML5 element, som angiver at dette indhold hører til i bunden af sitet, og typisk vil indeholde f.eks. links og copyright, hvis man følger designkonventioner -->
 
-    <div class="container-fluid sides">
-      <div class="row row-cols-2 spons-row">
+    <div class="container-fluid sides"> <!-- Sponsor logoer, som starter footeren og skaber en spacer -->
+      <div class="row row-cols-2 spons-row"> <!-- Bootstrap 5 CSS som opstiller vores sponsorlogoer i 2 kolonner på mobilskærm -->
         <div class="col-xs col-sm spons-img">
-          <a href="#!" target="_blank">
-            <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="ABC Skilte">
+          <a href="#!" target="_blank"> <!-- Link som ville linke til sponsorhjemmesiden -->
+            <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="ABC Skilte"> <!-- Sponsorbillede -->
           </a>
         </div>
         <div class="col-sm spons-img">
@@ -250,7 +249,7 @@
       </div>
     </div>
 
-    <div class="container-fluid sides pb-0">
+    <div class="container-fluid sides pb-0"> <!-- Links til kontaktinformationer, privatlivspolitik og vedtægter, samt til medlemsskabssiden -->
       <div class="row justify-content-center">
         <div class="col-sm-7 col-md-8 col-xxl-9">
           <h5 class="text-uppercase text-white pb-2">Lind Old Boys</h5>
@@ -276,7 +275,7 @@
           </ul>
         </div>
 
-        <div class="col-sm-3 col-md-2 col-xxl-1">
+        <div class="col-sm-3 col-md-2 col-xxl-1"> <!-- Links til samarbejdspartnere -->
           <h5 class="text-uppercase pb-2 text-white">Links</h5>
 
           <ul class="list-unstyled">
@@ -300,19 +299,19 @@
       </div>
     </div>
 
-    <div class="text-center text-white pb-2">
+    <div class="text-center text-white pb-2"><!-- Copyright -->
       © 2023 Copyright:
       <a class="text-white" href="#">lindoldboys.dk</a>
-      <p>Dette site er til undervisningsformål</p>
+      <p>Dette site er til undervisningsformål</p> <!-- Krav -->
     </div>
 
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <script src="components/script.js"></script>
+    crossorigin="anonymous"></script> <!-- Linker til Bootstraps javascript fil -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> <!-- Linker til ?? -->
+  <script src="components/script.js"></script> <!-- Linker til vores eksterne javascript fil -->
 
 </body>
 
