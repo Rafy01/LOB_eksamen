@@ -65,71 +65,80 @@
 
   <main> <!-- Main er et HTML5 element som angiver, at dette er dokumentets/sidens primære indhold -->
 
-    <div class="hero-section"> <!-- Opretter et element til vores hero område -->
-      <div class="hero-text text-center"> <!-- Bootstrap 5 CSS class som centrerer vores text -->
-        <h1 class="hero-heading"> <!-- Har guld effekt, i modsætning til teksten under -->
-          Lind Old Boys
-        </h1>
-        <h2 class="hero-subheading">
-          - Mere end bare en fodboldklub
-        </h2>
-        <a href="member.html"><button type="button" class="btn btn-dark continue-button">Bliv Medlem</button></a>
-      </div> <!-- En bliv meldem knap -->
-
-      <div class="container-fluid sides icons"> <!-- Et element som holder vores icons samlet -->
-        <div class="row row-cols-3 justify-content-center"> <!-- Rows lader os opstille vores icons -->
-          <div class="d-none d-sm-block col-sm-3">
-            <!-- Kolonner som angiver vores bredde på elementerne, i dette tilfælde blot som fylde -->
-          </div>
-          <div class="col-xs-4 col-sm-2 icon d-flex justify-content-center">
-            <!-- Angiver størrelser for kasserne vores ikoner er i -->
-            <a href="fodbold.html" class="icon-link">
-              <img src="pictures/icons/soccer.webp" class="icon-image" alt="Fodbold"
-                data-default-src="pictures/icons/soccer.webp" data-hover-src="pictures/icons/soccer-gold.webp">
-              <!-- Vores ikoner som billeder. Her er også js kode til en hover effekt -->
-            </a>
-          </div>
-          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
-            <a href="fitness.html" class="icon-link">
-              <img src="pictures/icons/fitness.webp" class="icon-image" alt="Fitness"
-                data-default-src="pictures/icons/fitness.webp" data-hover-src="pictures/icons/fitness-gold.webp">
-            </a>
-          </div>
-          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
-            <a href="volley.html" class="icon-link">
-              <img src="pictures/icons/volley.webp" class="icon-image" alt="Volley"
-                data-default-src="pictures/icons/volley.webp" data-hover-src="pictures/icons/volley-gold.webp">
-            </a>
-          </div>
-          <div class="d-none d-sm-block col-sm-3">
-          </div>
-          <div class="d-none d-sm-block col-sm-3">
-          </div>
-          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
-            <a href="running.html" class="icon-link">
-              <img src="pictures/icons/running.webp" class="icon-image" alt="Loeb"
-                data-default-src="pictures/icons/running.webp" data-hover-src="pictures/icons/running-gold.webp">
-            </a>
-          </div>
-          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
-            <a href="about.html" class="icon-link">
-              <img src="pictures/icons/beer.webp" class="icon-image" alt="Hygge"
-                data-default-src="pictures/icons/beer.webp" data-hover-src="pictures/icons/beer-gold.webp">
-            </a>
-          </div>
-          <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
-            <a href="badminton.html" class="icon-link">
-              <img src="pictures/icons/badminton.webp" class="icon-image" alt="Badminton"
-                data-default-src="pictures/icons/badminton.webp" data-hover-src="pictures/icons/badminton-gold.webp">
-            </a>
-          </div>
-          <div class="d-none d-sm-block col-sm-3">
-          </div>
+    <div class="container-fluid hero">
+      <div class="row hero-text justify-content-center">
+        <div class="col-12 col-sm-4 text-center">
+          <h1 class="hero-heading">
+            Lind Old Boys
+          </h1>
+          <h2 class="hero-subheading">
+            - Mere end bare en fodboldklub
+          </h2>
         </div>
       </div>
+      <br><br>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-2">
+          <a href="member.html"><button type="button" class="btn btn-dark continue-button">Bliv Medlem</button></a>
+        </div>
+      </div>
+    </div>
 
-      <img class="hero-img" src="pictures/lob-bar.webp" alt="Bar">
-      <!-- Et hero billede som med CSS kun er i baggrunden og fylder hele skærmhøjden -->
+
+    <div class="container-fluid sides icons"> <!-- Et element som holder vores icons samlet -->
+      <div class="row row-cols-3 justify-content-center"> <!-- Rows lader os opstille vores icons -->
+        <div class="d-none d-sm-block col-sm-3">
+          <!-- Kolonner som angiver vores bredde på elementerne, i dette tilfælde blot som fylde -->
+        </div>
+        <div class="col-xs-4 col-sm-2 icon d-flex justify-content-center">
+          <!-- Angiver størrelser for kasserne vores ikoner er i -->
+          <a href="fodbold.html" class="icon-link">
+            <img src="pictures/icons/soccer.webp" class="icon-image" alt="Fodbold"
+              data-default-src="pictures/icons/soccer.webp" data-hover-src="pictures/icons/soccer-gold.webp">
+            <!-- Vores ikoner som billeder. Her er også js kode til en hover effekt -->
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+          <a href="fitness.html" class="icon-link">
+            <img src="pictures/icons/fitness.webp" class="icon-image" alt="Fitness"
+              data-default-src="pictures/icons/fitness.webp" data-hover-src="pictures/icons/fitness-gold.webp">
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+          <a href="volley.html" class="icon-link">
+            <img src="pictures/icons/volley.webp" class="icon-image" alt="Volley"
+              data-default-src="pictures/icons/volley.webp" data-hover-src="pictures/icons/volley-gold.webp">
+          </a>
+        </div>
+        <div class="d-none d-sm-block col-sm-3">
+        </div>
+        <div class="d-none d-sm-block col-sm-3">
+        </div>
+        <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+          <a href="running.html" class="icon-link">
+            <img src="pictures/icons/running.webp" class="icon-image" alt="Loeb"
+              data-default-src="pictures/icons/running.webp" data-hover-src="pictures/icons/running-gold.webp">
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+          <a href="about.html" class="icon-link">
+            <img src="pictures/icons/beer.webp" class="icon-image" alt="Hygge"
+              data-default-src="pictures/icons/beer.webp" data-hover-src="pictures/icons/beer-gold.webp">
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 d-flex justify-content-center">
+          <a href="badminton.html" class="icon-link">
+            <img src="pictures/icons/badminton.webp" class="icon-image" alt="Badminton"
+              data-default-src="pictures/icons/badminton.webp" data-hover-src="pictures/icons/badminton-gold.webp">
+          </a>
+        </div>
+        <div class="d-none d-sm-block col-sm-3">
+        </div>
+      </div>
+    </div>
+
+    <img class="hero-img" src="pictures/lob-bar.webp" alt="Bar">
+    <!-- Et hero billede som med CSS kun er i baggrunden og fylder hele skærmhøjden -->
     </div>
 
     <div class="text-center section-title"> <!-- En sektionstitel som vises midt på siden -->
@@ -142,7 +151,8 @@
       <!-- En container til vores cards, som er fundamentet for indholdet vores site -->
       <div class="row justify-content-center"> <!-- Opstiller vores cards i midten -->
         <div class="col-sm-4"> <!-- Angiver bredde størrelsen på vores card -->
-          <a class="cards" onclick="location.href='generalforsamling_23.html';"> <!-- Link til card'ets indholdsside -->
+          <a class="cards" onclick="location.href='generalforsamling_23.html';">
+            <!-- Link til card'ets indholdsside -->
             <div class="button-small-text"> <!-- Tekst ovenpå card -->
               <h2>Generalforsamling 23</h2>
               <h3>22. april 2023</h3>
