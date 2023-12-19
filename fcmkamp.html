@@ -80,12 +80,14 @@
   </main>
 
   <footer class="footer">
+    <!-- Footer er et HTML5 element, som angiver at dette indhold hører til i bunden af sitet, og typisk vil indeholde f.eks. links og copyright, hvis man følger designkonventioner -->
 
-    <div class="container-fluid sides">
+    <div class="container-fluid sides"> <!-- Sponsor logoer, som starter footeren og skaber en spacer -->
       <div class="row row-cols-2 spons-row">
+        <!-- Bootstrap 5 CSS som opstiller vores sponsorlogoer i 2 kolonner på mobilskærm -->
         <div class="col-xs col-sm spons-img">
-          <a href="#!" target="_blank">
-            <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="ABC Skilte">
+          <a href="#!" target="_blank"> <!-- Link som ville linke til sponsorhjemmesiden -->
+            <img src="pictures/spons/abcskilte-logo.png" class="img-fluid" alt="ABC Skilte"> <!-- Sponsorbillede -->
           </a>
         </div>
         <div class="col-sm spons-img">
@@ -122,6 +124,7 @@
     </div>
 
     <div class="container-fluid sides pb-0">
+      <!-- Links til kontaktinformationer, privatlivspolitik og vedtægter, samt til medlemsskabssiden -->
       <div class="row justify-content-center">
         <div class="col-sm-7 col-md-8 col-xxl-9">
           <h5 class="text-uppercase text-white pb-2">Lind Old Boys</h5>
@@ -131,10 +134,10 @@
               <a href="#!" class="text-white text-decoration-none">Langtoften 73, Lind 7400 Herning</a>
             </li>
             <li>
-              <a href="#!" class="text-white text-decoration-none">41 74 16 79</a>
+              <a href="tel:+4541711679" class="text-white text-decoration-none">41 74 16 79</a>
             </li>
             <li>
-              <a href="#!" class="text-white text-decoration-none">ath@jysk.com</a>
+              <a href="mailto:ath@jysk.com" class="text-white text-decoration-none">ath@jysk.com</a>
             </li>
             <li>
               <a href="privacy_policy.html" class="gold">Privatlivspolitik</a>
@@ -147,7 +150,7 @@
           </ul>
         </div>
 
-        <div class="col-sm-3 col-md-2 col-xxl-1">
+        <div class="col-sm-3 col-md-2 col-xxl-1"> <!-- Links til samarbejdspartnere -->
           <h5 class="text-uppercase pb-2 text-white">Links</h5>
 
           <ul class="list-unstyled">
@@ -171,19 +174,19 @@
       </div>
     </div>
 
-    <div class="text-center text-white pb-2">
+    <div class="text-center text-white pb-2"><!-- Copyright -->
       © 2023 Copyright:
       <a class="text-white" href="#">lindoldboys.dk</a>
-      <p>Dette site er til undervisningsformål</p>
+      <p>Dette site er til undervisningsformål</p> <!-- Krav -->
     </div>
 
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <script src="components/script.js"></script>
+    crossorigin="anonymous"></script> <!-- Linker til Bootstraps javascript fil -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> <!-- Linker til ?? -->
+  <script src="components/script.js"></script> <!-- Linker til vores eksterne javascript fil -->
 
 </body>
 
