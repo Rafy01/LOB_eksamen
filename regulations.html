@@ -53,26 +53,39 @@
 
   <main>
 
+    <!--Titel til Vedtægter-->
     <div class="text-center page-title">
       <h1>
         Vedtægter
       </h1>
     </div>
 
+    <!--Det er en accordion som laver en dropdown så du kan læse en enhver paragraffer i vedtægter-->
     <div class="container-fluid sides">
-      <div class="row justify-content-center">
-        <div class="accordion accordion-flush col-12 col-sm-8" id="accordionFlushExample">
+      <!--Dette er en container som indeholder hele accordion struktur og "containerfluid" bruges til fremgive fulde bredde af container -->
+      <div class="row justify-content-center"> <!--Dette er elementer, der centrere i forhold til container eller det bredere layout. -->
+        <div class="accordion accordion-flush col-12 col-sm-8" id="accordionFlushExample"> <!--"accordion" giver accordion, mens "accordion flush" referere
+        til en variant eller en stylingmulighed, der fjerner afstand mellem accordionsektioner-. "col-12 col-sm-8" (Bootstrap-kolonne-klasse)
+      Dette refereres til forskellige skærmstørrelser på accordions. "id=accordionflushexample" Dette er en unikt attribut, som identificere 
+    specifikke accordion i html-dokumentet, der henvises andre dele af koder som Javascript eller CSS  -->
 
-          <div class="accordion-item">
+          <div class="accordion-item"> <!--Definere hvert element i accordion og repræsentere en sektion i accordion-->
             <h2 class="accordion-header" id="flush-heading1">
+              <!--Dette er en overskriften for hver accordions sektioner. "accordion header" Defineres for en overskrift. "id=flushingheader" 
+                  identificere overskriften unikt dvs. at andre link på samme side kan henvise til denne såkaldt overskrift-->
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                <!--Knappen fungeres som en aktiveringspunkt dvs. når du klikker 
+                    på en af accordion sektioner vil det kunne udfolde og folde sammen. "id" Attributteren vil kunne fortælle browseren, hvordan knappen skal kunne interagere med accordion sektioner-->
                 §.1 Foreningsnavn
               </button>
             </h2>
             <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
               data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
+              <!--Dette er det foldbare område, der indholder informationer for den pågældende overskrift.
+                  "id" matcher mål-id'et for knappen, så foldbare område ved hvilken knap der skal aktiveres. "accordion-collapse" signalere at dette er et foldbart område.-->
+              <div class="accordion-body"> <!--"accordion-body" er indholdet af den foldbare sektion. når overskriften klikkes, foldes dette indhold ud. 
+                  Det indeholder den detaljerede information, der knyttet til den pågældende sektion.-->
                 <p>Foreningens navn er : Lind Old Boys Stiftet den 7. maj 1969, Hjemsted er Lind, 7400 Herning.</p>
               </div>
             </div>

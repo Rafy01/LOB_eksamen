@@ -53,20 +53,27 @@
 
 
   <main>
-
+    <!--Titel for siden-->
     <div class="text-center page-title">
       <h1>
         Bliv Medlem
       </h1>
     </div>
 
+    <!--Formular til medlemskab-->
     <form>
-      <div class="container-fluid">
-        <div class="row row-cols-2 justify-content-center">
-          <div class="col-12 col-sm-4">
-            <div class="rounded-input">
-              <label for="firstName"></label>
-              <input type="text" class="rounded-input" id="firstName" placeholder="Fornavn">
+      <div class="container-fluid"> <!--"containerfluid" bruges til fremgive fulde bredde af container-->
+       
+    <!--Felter til personlig informationer-->
+        <div class="row row-cols-2 justify-content-center"> <!-- Dette opretter en række (row) med en specifikation (row-cols-2), 
+          der fortæller Bootstrap, at rækken skal opdeles i to kolonner på samme række. justify-content-center centrerer indholdet horisontalt inden for rækken.-->
+         
+          <div class="col-12 col-sm-4"> <!--"col-12 col-sm-8" (Bootstrap-kolonne-klasse)
+            Dette refereres til forskellige skærmstørrelse.-->
+            <div class="rounded-input"> <!--Dette er en inputfelt der referere til en afrundede hjørne -->
+              <label for="firstName"></label> <!--Dette label forbinder med inputfeltet, så det er muligt at klikke på labelen 
+              for at aktivere inputfelt-->
+              <input type="text" class="rounded-input" id="firstName" placeholder="Fornavn"> <!--Når man klikker på inputfelt, er det muligt at taste sit navn ind.-->
             </div>
           </div>
           <div class="col-12 col-sm-4 text-center">
@@ -77,6 +84,7 @@
           </div>
         </div>
 
+        <!--Felter til kontaktinformationer-->
         <div class="row row-cols-2 justify-content-center">
           <div class="col-12 col-sm-4 text-center">
             <div class="rounded-input">
@@ -92,6 +100,7 @@
           </div>
         </div>
 
+        <!--felt til Postnummer-->
         <div class="row row-cols-2 justify-content-center">
           <div class="col-12 col-md-4">
             <div class="rounded-input">
@@ -102,23 +111,27 @@
           <p class="col-12 col-sm-4 medlemskabspris">Medlemskabspris: 700.-DKK/år.</p>
         </div>
 
+        <!--Linje til adskillelse mellem kolonner-->
         <div class="row justify-content-center">
           <hr class="col-12 col-sm-8 spacer">
         </div>
       </div>
 
 
-
+      <!--Titel til Aktiviteter-->
       <div class="container-fluid">
         <div class="row justify-content-center">
           <br>
           <h2 class="aktiviteter">Aktiviteter</h2>
         </div>
+        <!--Checkboxe til forskellige aktiviteter-->
         <div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-sm-4 checkboxsport">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Fodbold</label>
+          <div class="row justify-content-center"> <!--Dette er elementer, der centrere i forhold til container eller det bredere layout. -->
+            <div class="col-12 col-sm-4 checkboxsport"> <!--Dette angiver skærmstørrelse for hvor checkboxens skal ligge-->
+              <input type="checkbox" class="form-check-input" id="exampleCheck1"> <!--Dette er en checkbox (afkrydsningsfelt) i html-formen.
+              "form-check-input" bruges i bootstrap til at style checkboxen-->
+              <label class="form-check-label" for="exampleCheck1">Fodbold</label> <!--Dette er en label-element for Checkboxen. "for=exampleCheck1" bruges
+              til at henvise til checkboxens id, som aktivere checkboxen, hvergang man trykker på teksten-->
             </div>
           </div>
           <div class="row justify-content-center">
@@ -146,11 +159,15 @@
             </div>
             <br><br><br>
           </div>
+          <!--Yderligere betingelser-->
           <div class="row justify-content-center">
             <div class="col-12 col-sm-4 checkbox">
               <input type="checkbox" class="form-check-input" id="exampleCheck6">
               <label class="form-check-label" for="exampleCheck6">Jeg er 28+ år og accepter <a href="regulations.html"
-                  class="vedtægter">vedtægter</a></label>
+                  class="vedtægter">vedtægter</a></label><!-- Dette er en label-element for Checkboxen. 
+                    "for=exampleCheck6" bruges til at henvise til checkboxens id, som aktivere checkboxen, 
+                    hvergang man trykker på teksten. "href="regulation.html" class="vedtægter">vedtægter" Dette er en 
+                  link som henvises til en vædtægter undersiden, så hvergang man trykker på ordet vedtægt i sætning vil det kunne linke.-->
             </div>
           </div>
           <div class="row justify-content-center">
@@ -158,14 +175,14 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck7">
               <label class="form-check-label" for="exampleCheck7">Jeg giver hermed lov til at LOB behandler <br> mine
                 personoplysninger jf. vores <a href="privacy_policy.html"
-                  class="privatlivspolitik">privatlivspolitik</a></label>
-            </div>
+                  class="privatlivspolitik">privatlivspolitik</a></label> 
           </div>
         </div>
       </div>
 
       <br>
       <br>
+      <!--knappen til at blive medlemskab-->
       <div class="row justify-content-center">
         <div class="col-12 col-sm-4">
           <button type="button" onclick="location.href='signed-up.html';" class="btn btn-dark continue-button">Opret
